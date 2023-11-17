@@ -50,6 +50,7 @@ Run the bot:
 
 ```bash
 node bot.js
+```
 
 ## Disclaimer:
 Use the Pancake Sniper Bot responsibly and at your own risk. Always conduct thorough research and ensure compliance with relevant regulations before engaging in any financial activities.
