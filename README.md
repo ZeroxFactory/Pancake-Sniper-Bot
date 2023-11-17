@@ -24,7 +24,7 @@ Introducing the Pancake Sniper Bot, a powerful Node.js application designed to s
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/pancake-sniper-bot.git
+    git clone https://github.com/ZeroxFactory/pancake-sniper-bot.git
     ```
 
 2. Install dependencies:
@@ -36,17 +36,17 @@ Introducing the Pancake Sniper Bot, a powerful Node.js application designed to s
 
 ### Configuration
 
-1. Create a configuration file:
+1. Edit bot.js file:
+2. Add you wallet address and wallet private key
 
     ```bash
-    cp config.example.json config.json
+    const walletAddress = 'YOUR_WALLET_ADDRESS_HERE';
+    const myPrivateKey = 'YOUR_WALLET_PRIVATE_KEY';
+    const AMOUNT = '0.01' // How much BNB are you willing to spend on new tokens?
     ```
-
-2. Edit `config.json` and add your API keys, adjust parameters according to your preferences.
-
 ### Usage
 
 Run the bot:
 
 ```bash
-npm start
+node bot.js
