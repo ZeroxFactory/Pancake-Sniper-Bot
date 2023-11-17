@@ -50,3 +50,7 @@ Run the bot:
 
 ```bash
 node bot.js
+
+## Disclaimer:
+Use the Pancake Sniper Bot responsibly and at your own risk. Always conduct thorough research and ensure compliance with relevant regulations before engaging in any financial activities.
+the contract use 0xfactory router to make swap, it cost fee of 0.0005 BNB per swap.
