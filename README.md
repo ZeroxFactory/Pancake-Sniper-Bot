@@ -1,10 +1,6 @@
 # Pancake-Sniper-Bot
 Pancake Sniper Bot, a powerful Node.js application designed to streamline and enhance your experience in the world of decentralized finance (DeFi). This innovative bot is tailored for those seeking to effortlessly detect and seize opportunities in newly created liquidity pools (LPs) on PancakeSwap.
 
-## Introduction
-
-Introducing the Pancake Sniper Bot, a powerful Node.js application designed to streamline and enhance your experience in the world of decentralized finance (DeFi). This innovative bot is tailored for those seeking to effortlessly detect and seize opportunities in newly created liquidity pools (LPs) on PancakeSwap.
-
 ## Key Features
 
 1. **Automatic LP Detection:** The Pancake Sniper Bot constantly monitors PancakeSwap for the creation of new liquidity pools, ensuring you stay ahead of the curve in the ever-evolving DeFi landscape.
@@ -50,3 +46,8 @@ Run the bot:
 
 ```bash
 node bot.js
+```
+
+## Disclaimer:
+Use the Pancake Sniper Bot responsibly and at your own risk. Always conduct thorough research and ensure compliance with relevant regulations before engaging in any financial activities.
+the contract use 0xfactory router to make swap, it cost fee of 0.0005 BNB per swap.
