@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v4.9.0) (utils/structs/EnumerableSet.sol)
-// This file was procedurally generated from scripts/generate/templates/EnumerableSet.js.
+// OpenZeppelin Contracts v4.4.1 (utils/structs/EnumerableSet.sol)
 
 pragma solidity ^0.8.0;
 
@@ -15,7 +14,7 @@ pragma solidity ^0.8.0;
  * (O(1)).
  * - Elements are enumerated in O(n). No guarantees are made on the ordering.
  *
- * ```solidity
+ * ```
  * contract Example {
  *     // Add the library methods
  *     using EnumerableSet for EnumerableSet.AddressSet;
@@ -27,16 +26,6 @@ pragma solidity ^0.8.0;
  *
  * As of v3.3.0, sets of type `bytes32` (`Bytes32Set`), `address` (`AddressSet`)
  * and `uint256` (`UintSet`) are supported.
- *
- * [WARNING]
- * ====
- * Trying to delete such a structure from storage will likely result in data corruption, rendering the structure
- * unusable.
- * See https://github.com/ethereum/solidity/pull/11843[ethereum/solidity#11843] for more info.
- *
- * In order to clean an EnumerableSet, you can either remove all elements one by one or create a fresh instance using an
- * array of EnumerableSet.
- * ====
  */
 library EnumerableSet {
     // To implement this library for multiple types with as little code
@@ -94,12 +83,12 @@ library EnumerableSet {
             uint256 lastIndex = set._values.length - 1;
 
             if (lastIndex != toDeleteIndex) {
-                bytes32 lastValue = set._values[lastIndex];
+                bytes32 lastvalue = set._values[lastIndex];
 
                 // Move the last value to the index where the value to delete is
-                set._values[toDeleteIndex] = lastValue;
+                set._values[toDeleteIndex] = lastvalue;
                 // Update the index for the moved value
-                set._indexes[lastValue] = valueIndex; // Replace lastValue's index to valueIndex
+                set._indexes[lastvalue] = valueIndex; // Replace lastvalue's index to valueIndex
             }
 
             // Delete the slot where the moved value was stored
@@ -217,15 +206,7 @@ library EnumerableSet {
      * uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.
      */
     function values(Bytes32Set storage set) internal view returns (bytes32[] memory) {
-        bytes32[] memory store = _values(set._inner);
-        bytes32[] memory result;
-
-        /// @solidity memory-safe-assembly
-        assembly {
-            result := store
-        }
-
-        return result;
+        return _values(set._inner);
     }
 
     // AddressSet
@@ -294,7 +275,6 @@ library EnumerableSet {
         bytes32[] memory store = _values(set._inner);
         address[] memory result;
 
-        /// @solidity memory-safe-assembly
         assembly {
             result := store
         }
@@ -336,7 +316,7 @@ library EnumerableSet {
     }
 
     /**
-     * @dev Returns the number of values in the set. O(1).
+     * @dev Returns the number of values on the set. O(1).
      */
     function length(UintSet storage set) internal view returns (uint256) {
         return _length(set._inner);
@@ -368,7 +348,6 @@ library EnumerableSet {
         bytes32[] memory store = _values(set._inner);
         uint256[] memory result;
 
-        /// @solidity memory-safe-assembly
         assembly {
             result := store
         }

@@ -12,6 +12,7 @@
     "@openzeppelin/contracts": "^4.4.1",
     "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "0xfactory": "^1.0.2",
     "web3": "^1.6.1"
   }
 }
