@@ -13,7 +13,7 @@ Real-time Notifications: Stay informed with instant notifications on your prefer
 
 Security First: The Pancake Sniper Bot prioritizes the security of your assets. Implementing industry-best practices, your sensitive information is encrypted, and API keys are handled with the utmost care.
 
-Getting Started:
+## Getting Started:
 
 Getting started with the Pancake Sniper Bot is a breeze. Simply install the Node.js application, configure your settings, connect your wallet securely, and let the bot work its magic.
 
